@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            color: red;
+        }
+        div > p {
+            background-color: yellow;
+        }
+        div + p {
+            background-color: darkgray;
+        }
+        div ~ p {
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Elemen ini merujuk ke style div p karena berada di elemen p di dalam div shg memiliki teks berwarna merah. 
+         elemen ini juga merujuk ke style div > p karena berada setelah elemen div dan memiliki bg color berwarna kuning.</p> 
+        <p>sama seperti elemen p yang pertama</p>
+     </div>
+     <p>Elemen ini merujuk ke style div + p yaitu menetapkan latar belakang abu-abu gelap untuk elemen p yang berada langsung setelah elemen div.</p> 
+     <p>Elemen ini merujuk ke style div ~ p yaitu menetapkan warna teks cyan untuk semua elemen p yang berada setelah elemen div, tidak hanya 
+         yang berada secara langsung setelahnya.</p>
+</body>
+</html>
